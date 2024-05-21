@@ -55,15 +55,28 @@ html {
 /* my font size's media query end */
 
 
-/* my dad jokes start */
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+/* my wheather app start */
+/* .video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
-/* my dad jokes end */
+
+@media (min-aspect-ratio: 16/9) {
+    .video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .video{
+        width: auto;
+        height: 100%;
+    }
+} */
+/* my wheather app end */
 
 .rough {
     border: .1rem solid rgb(0, 0, 0);
