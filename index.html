@@ -52,10 +52,40 @@
 
 <body>
 
-    <!-- <video autoplay loop muted plays-inline class="video">
+    <video autoplay loop muted plays-inline class="video">
         <source src="https://cdn.pixabay.com/video/2018/09/19/18328-291012910_large.mp4" type="">
-    </video> -->
+    </video>
+    <div class="container d-flex justify-content-center align-items-center app-main-div rough">
+        <div class="col-8 weather-app rough">
+            <div class="col-3 search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search-input">
+            </div>
 
+            <div class="col-6 city-sec">
+                <p class="city-name"></p>
+                <p class="date-and-time"></p>
+                <p class="weather"></p>
+                <p class="icon"></p>
+                <p class="temp"></p>
+
+                <div class="col-12 min-max-sec">
+                    <p class="min-temp"></p>
+                    <p class="max-temp"></p>
+                </div>
+            </div>
+
+            <div class="col-12 extra-info-sec">
+                <div class="row">
+                    <div class="col-6 extra-info" id="feel"></div>
+                    <div class="col-6 extra-info" id="humidity"></div>
+                    <div class="col-6 extra-info" id="wind"></div>
+                    <div class="col-6 extra-info" id="pressure"></div>
+                </div>
+            </div>
+        </div>
+        <button id="btn">submit</button>
+    </div>
 
 
     <script src="app.js"></script>
