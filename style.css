@@ -1,0 +1,70 @@
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+
+/* my font size's media query start */
+html {
+    font-size: 62.5%;
+}
+
+@media (min-width:1200px) {
+    html {
+        font-size: 68.75%;
+    }
+}
+
+@media (min-width:1000px) {
+    html {
+        font-size: 68.75%;
+    }
+}
+
+@media (max-width:992px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 56.25%;
+    }
+
+    #stopwatch-history-div{
+        height: 20vh;
+    }
+}
+
+@media (max-width:576px) {
+    html {
+        font-size: 50%;
+    }
+
+}
+
+@media (max-width:350px) {
+    .main-stopwatch {
+        width: 25rem !important;
+    }
+}
+
+/* my font size's media query end */
+
+
+/* my dad jokes start */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* my dad jokes end */
+
+.rough {
+    border: .1rem solid rgb(0, 0, 0);
+}
