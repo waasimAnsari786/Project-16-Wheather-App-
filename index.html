@@ -55,36 +55,83 @@
     <video autoplay loop muted plays-inline class="video">
         <source src="https://cdn.pixabay.com/video/2018/09/19/18328-291012910_large.mp4" type="">
     </video>
-    <div class="container d-flex justify-content-center align-items-center app-main-div rough">
-        <div class="col-8 weather-app rough">
-            <div class="col-3 search-box">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="search-input">
+    <div class="container d-flex justify-content-center align-items-center app-main-div">
+        <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-9 col-sm-10 col-11 weather-app">
+            <div class="col-5 search-box bg-dark py-3 px-2">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" id="search-input" placeholder="search your city...">
             </div>
 
-            <div class="col-6 city-sec">
-                <p class="city-name"></p>
-                <p class="date-and-time"></p>
-                <p class="weather"></p>
-                <p class="icon"></p>
-                <p class="temp"></p>
+            <div class="col-6 mx-auto city-sec text-center mt-5">
+                <p class="city-name">city</p>
+                <p class="date-and-time">date</p>
+                <p class="weather">weather</p>
+                <p class="icon">icon</p>
+                <p class="temp">temp</p>
 
-                <div class="col-12 min-max-sec">
-                    <p class="min-temp"></p>
-                    <p class="max-temp"></p>
+                <div class="col-12 min-max-sec d-flex justify-content-evenly align-items-center">
+                    <p class="min-temp">min:</p>
+                    <p class="max-temp">max:</p>
                 </div>
             </div>
 
-            <div class="col-12 extra-info-sec">
+            <div class="col-12 extra-info-sec mt-5">
                 <div class="row">
-                    <div class="col-6 extra-info" id="feel"></div>
-                    <div class="col-6 extra-info" id="humidity"></div>
-                    <div class="col-6 extra-info" id="wind"></div>
-                    <div class="col-6 extra-info" id="pressure"></div>
+                    <div class="col-6 extra-info py-3 px-4" id="feel">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fa-solid fa-temperature-three-quarters extra-info-icon"></i>
+                            </div>
+
+                            <div class="col-11 ps-4">
+                                <p class="extra-info-text">feels like</p>
+                                <p class="extra-info-text">00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 extra-info py-3 px-4" id="feel">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fa-solid fa-droplet extra-info-icon"></i>
+                            </div>
+
+                            <div class="col-11 ps-4">
+                                <p class="extra-info-text">humidity</p>
+                                <p class="extra-info-text">00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 extra-info py-3 px-4" id="feel">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fa-solid fa-wind extra-info-icon"></i>
+                            </div>
+
+                            <div class="col-11 ps-4">
+                                <p class="extra-info-text">wind</p>
+                                <p class="extra-info-text">00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 extra-info py-3 px-4" id="feel">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fa-solid fa-weight-scale extra-info-icon"></i>
+                            </div>
+
+                            <div class="col-11 ps-4">
+                                <p class="extra-info-text">pressure</p>
+                                <p class="extra-info-text">00</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <button id="btn">submit</button>
         </div>
-        <button id="btn">submit</button>
     </div>
 
 
